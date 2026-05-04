@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Simulado.Application\Simulado.Application.csproj" />
+    <ProjectReference Include="..\Simulado.Domain\Simulado.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
