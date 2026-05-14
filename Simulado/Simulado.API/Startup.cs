@@ -40,23 +40,23 @@ namespace Simulado.API
 
             services.AddMediatR(typeof(Startup));
 
-            //Por algum motivo não consigo rodar0
-            //migração se esse trecho não estiver comentado
+            //Por algum motivo nï¿½o consigo rodar0
+            //migraï¿½ï¿½o se esse trecho nï¿½o estiver comentado
             services.AddJwtConfiguration(Configuration);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
+            //if (env.IsDevelopment())
+            //{
                 app.UseDeveloperExceptionPage();
 
                 app.UseSwaggerConfiguration();
-            }
+            //}
 
             app.UseCorsConfiguration();
 
-            app.UseHttpsRedirection();
+           // app.UseHttpsRedirection(); COMENTADO PARA TESTE
 
             app.UseRouting();
 
