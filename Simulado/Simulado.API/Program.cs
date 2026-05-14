@@ -20,6 +20,9 @@ namespace Simulado.API
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                //addteste
+                 webBuilder.UseUrls("http://0.0.0.0:8080");
+
                     webBuilder.UseStartup<Startup>();
                 });
     }
